@@ -1,0 +1,17 @@
+<h2>Tasks Management</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>User</th>
+      <th>Completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.title }}</td>
+      <td>{{ task.user }}</td>
+      <td>{{ task.completed ? 'Yes' : 'No' }}</td>
+    </tr>
+  </tbody>
+</table>
